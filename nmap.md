@@ -52,7 +52,7 @@
 
 * ***ICMP***(Internet Control Message Protocol) is the protocol used by network devices to send control messages(not for transferring data)
 * ***ARP***(Address Resolution Protocol) finds the MAC address of a device when IP address of the device is known
-* ***IP*** is the logical address whereas ***MAC*** is the physical address used to deliver frames. In simpler words, you know the room no.(IP) but you need to know ther person's name/identity(MAC) to deliver the letter
+* ***IP*** is the logical address whereas ***MAC*** is the physical address used to deliver frames. In simpler words, House=Host (IP); Door to house=Network card (MAC); Room inside=Application (Port); Person inside=Service/software
 * ***sudo*** runs a command with root/admin privilege
 
 * To find the exact software running, its version, OS behind it etc.:
