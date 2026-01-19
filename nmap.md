@@ -28,6 +28,18 @@
 |5.|XMAS scan (-sX)|sets unusual flags like FIN(finish), URG(urgent), PSH(push) eetc. thaty confuse the system then if port is closed, system replies and if open, it stays silent|slip past simple firewalls|doesn't work well with all systems|
 |6.|NULL scan (-sN)|sends packets with no flags-some systems do not know how to respond|very sneaky|unreliable against modern firewalls|
 
+ Nmap Scan Response Master Table:
+
+| Scan Type        | OPEN        | CLOSED             | FILTERED           |
+|------------------|-------------|--------------------|--------------------|
+| TCP Connect (-sT)| SYN-ACK     | RST                | No response / ICMP |
+| TCP SYN (-sS)    | SYN-ACK     | RST                | No response / ICMP |
+| UDP (-sU)        | No response | ICMP Unreachable   | No response        |
+| FIN (-sF)        | No response | RST                | No response        |
+| NULL (-sN)       | No response | RST                | No response        |
+| XMAS (-sX)       | No response | RST                | No response        |
+
+
 * Host discovery:
 
 |SL.No.|scan|purpose|
